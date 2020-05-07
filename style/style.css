@@ -1,20 +1,16 @@
-@font-face 
-{
+@font-face {
     font-family: 'OpenSans';
     src: url('../font/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-@font-face 
-{
+@font-face {
     font-family: 'OpenSans';
     src: url('../font/OpenSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
-body
-{
-    font-family: 'OpenSans', 'Arial', sans-serif;
+body{
     display: flex;
     min-width: 400px;
     max-width: 1000px;
@@ -23,44 +19,43 @@ body
     flex-direction: row;
     flex-wrap: wrap;
 }
-.section:nth-child(1)
-{
+.colonne{
+    font-family: 'OpenSans', 'Arial', sans-serif;
+}
+.colonne:nth-child(1){
     order: 1;
-    background-color: chartreuse;
+    background-color: rgb(255, 187, 0);
+    display:flex;
+    flex-direction: column-reverse;
     flex: 1;
 }
-.section:nth-child(2)
-{
+.colonne:nth-child(2){
     order: 2;
     background-color: aqua;
     flex: 3;
 }
-.gauche
-{
-    min-width: 150px;
-    max-width: 250px;
-}
-.droite
-{
-    min-width: 250px;
-    max-width: 750px;
-
-}
-
-/*.section_info_generale
-{
-    background-color: aqua;
-    width: 200px;
-
-}
-.section_info_detail
-{
-    background-color: chartreuse;
+#gauche{
     min-width: 200px;
-    max-width: 700px;
+    max-width: 250px;
+    /*padding: 12px;*/                          /* Marge intérieure de 12px */
+}
+#droite{
+    min-width: 400px    ;
+    max-width: 750px;
     padding: 12px;                          /* Marge intérieure de 12px */
-}*/
 
+}
+#photo {
+/*  vv*/
+}
+.bandeau {
+    background-color: black;
+    color: rgb(255, 187, 0);
+    text-align: center;
+}
+h2 .bandeau {
+
+}
 
 
 h1, h2{
@@ -69,18 +64,15 @@ h1, h2{
 }
 
 
-h1
-{
+h1{
     text-align: center;
 }
 
-img
-{
+img{
     border: 1px solid black;
     box-shadow: 2px 2px 2px black;
 }
 
-h2
-{
+h2{
     color: #6E4A46;
 }
