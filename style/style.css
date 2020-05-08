@@ -12,50 +12,60 @@
 }
 body{
     display: flex;
-    min-width: 400px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row;        /* direction des colonnes : sur une ligne */
+    flex-wrap: wrap;            /* colonnes à la ligne si pas de place */
 }
 .colonne{
     font-family: 'OpenSans', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;             /* direction des div : en colonne */
+    justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
+    align-items: space-between;         /* alignement axe secondaire (horiz.): étiré sur tout l'axe */
 }
-.colonne:nth-child(1){
-    order: 1;
+#col_gauche{
+    max-width: 250px;
+    width: 400px;
     background-color: rgb(255, 187, 0);
-    display:flex;
-    flex-direction: column-reverse;
     flex: 1;
 }
-.colonne:nth-child(2){
-    order: 2;
+#col_droite{
+    max-width: 750px;
+    padding: 12px;                          /* Marge intérieure de 12px */
     background-color: aqua;
     flex: 3;
 }
-#gauche{
-    min-width: 200px;
-    max-width: 250px;
-    /*padding: 12px;*/                          /* Marge intérieure de 12px */
+#blocphoto {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    /*flex: 1;*/
 }
-#droite{
-    min-width: 400px    ;
-    max-width: 750px;
-    padding: 12px;                          /* Marge intérieure de 12px */
-
+#contact {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
+    /*flex: 1;*/
 }
-#photo {
-/*  vv*/
+.couleurA {
+        background-color: blueviolet;
+}
+#apropos {
+    background-color: salmon;
+     /*flex: 1;*/
+}
+#loisirs {
+    background-color: yellow;
+    /*flex: 1;*/
 }
 .bandeau {
     background-color: black;
     color: rgb(255, 187, 0);
     text-align: center;
 }
-h2 .bandeau {
 
-}
 
 
 h1, h2{
