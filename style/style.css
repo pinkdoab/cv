@@ -12,8 +12,8 @@
 }
 body{
     display: flex;
-    flex-direction: row;        /* direction des colonnes : sur une ligne */
-    flex-wrap: wrap;            /* colonnes à la ligne si pas de place */
+    flex-direction: row;        /* direction des colonnes : droite à gauche */
+    flex-wrap: wrap;            /* colonnes superposées si pas de place en largeur */
 }
 .colonne{
     font-family: 'OpenSans', 'Arial', sans-serif;
@@ -42,6 +42,7 @@ body{
     /*flex: 1;*/
 }
 #contact {
+
     background-color: red;
     display: flex;
     flex-direction: column;
@@ -62,7 +63,7 @@ body{
 }
 .bandeau {
     background-color: black;
-    color: rgb(255, 187, 0);
+    color: ;
     text-align: center;
 }
 
@@ -70,7 +71,8 @@ body{
 
 h1, h2{
     font-weight: bold;
-    font-style: normal;   
+    font-style: normal;
+    margin: 0px;    
 }
 
 
