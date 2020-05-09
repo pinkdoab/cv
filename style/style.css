@@ -7,18 +7,25 @@
 @font-face {
     font-family: 'OpenSans';
     src: url('../font/OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: bold;                                  
     font-style: normal;
 }
-body{
-    display: flex;
-    flex-direction: row;        /* direction des colonnes : droite à gauche */
+
+.page {
+    max-width: 800px;           /* max taille de la page */
+    margin: 0 auto;             /* page centrée (0 = haut/bas, auto = gauche/droite) */
+
+    background: #fff;         /*couleur fond de la page */
+         
+    display: flex;              /* Flexbox sur les colonnes */
+    flex-direction: row;        /* direction des colonnes : de droite à gauche */
     flex-wrap: wrap;            /* colonnes superposées si pas de place en largeur */
+
 }
 .colonne{
     font-family: 'OpenSans', 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;             /* direction des div : en colonne */
+    display: flex;                      /* Flexbox sur les div (photo, contact, a propos et loisirs) */
+    flex-direction: column;             /* direction des div : de haut en bas */
     justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
     align-items: space-between;         /* alignement axe secondaire (horiz.): étiré sur tout l'axe */
 }
@@ -74,7 +81,9 @@ h1, h2{
     font-style: normal;
     margin: 0px;    
 }
-
+p, li {
+    font-size: xx-small;;
+}
 
 h1{
     text-align: center;
