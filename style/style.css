@@ -7,7 +7,7 @@ body {
     font-family: 'OpenSans', 'Arial', sans-serif;
     font-size: 100%;                                    /* taille par defaut du navigateur */
 
-    height :100vh;                                     /* hauteur 100% du viewport */
+    min-height :100vh;                                     /* hauteur 100% du viewport */
     max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
 
     margin: auto;                                       /* page centrée */
@@ -25,24 +25,52 @@ body {
     align-items: space-between;         /* alignement axe secondaire (horiz.): étiré sur tout l'axe */
 }
 #blocphoto {
-    /*background-color: green;*/
-    flex: 0 0 150px;
-    display: flex;                      /* centrage de #phtoIdentite */
+    display: flex;                      /* centrage de #photoIdentite */
+    justify-content: center;
+    align-items: center
 }
-#photoIdentite {
-    margin: auto;
+#taille_photo{
+    width: 40%;
+	margin: 1rem;
+}
+
+#contact h5 {
+    margin: 0.5rem 0rem 0rem 2rem;
+}
+#contact p {
+    margin: 0rem 0rem 0.5rem 2rem;
 }
 #apropos {
     flex: 1;                            /* prend la hauteur restante */
 }
+#apropos p {
+    margin: 2rem;
+    text-align: justify;
+}
 #loisirs {
     margin-top: auto;
+}
+#logos img{
+    width: 20%;
+	height: 20%;
+}
+#logos {
+    margin: 1rem 2rem 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+}
 
+h2{
+    color: rgb(255, 145, 0);
 }
 .bandeau {
     background-color: black;
     text-align: center;
 }
+
+
+
+
 #col_info_detaillee{
     padding: 12px;                          /* Marge intérieure de 12px */
     background-color: aqua;
@@ -53,7 +81,6 @@ body {
     justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
 }
 
-
 h1, h2{
    /* font-weight: bold;
     font-style: normal; */
@@ -62,23 +89,10 @@ h1, h2{
 p, li {
     font-size: 0.8rem;
 }
-#contact ul {
-    list-style-type: none;
-    }
-#apropos p {
-    background-color: aqua;
-    margin: 0;
-    padding: 10%;
-}
+
+
 h1{
     text-align: center;
 }
 
-img{
-    border: 1px solid black;
-    box-shadow: 2px 2px 2px black;
-}
 
-h2{
-    color: rgb(255, 145, 0);
-}
