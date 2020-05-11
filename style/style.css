@@ -1,90 +1,75 @@
 @font-face {
     font-family: 'OpenSans';
     src: url('../font/OpenSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
-@font-face {
-    font-family: 'OpenSans';
-    src: url('../font/OpenSans-Bold.ttf') format('truetype');
-    font-weight: bold;                                  
-    font-style: normal;
-}
-
-.page {
-    max-width: 800px;           /* max taille de la page */
-    margin: 0 auto;             /* page centrée (0 = haut/bas, auto = gauche/droite) */
-
-    background: #fff;         /*couleur fond de la page */
-         
-    display: flex;              /* Flexbox sur les colonnes */
-    flex-direction: row;        /* direction des colonnes : de droite à gauche */
-    flex-wrap: wrap;            /* colonnes superposées si pas de place en largeur */
-
-}
-.colonne{
+body {
+    background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
+    font-size: 100%;                                    /* taille par defaut du navigateur */
+
+    height :100vh;                                     /* hauteur 100% du viewport */
+    max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
+
+    margin: auto;                                       /* page centrée */
+    
+    display: flex;                                      /* Flexbox sur les colonnes */
+    flex-wrap: wrap;                                    /* colonnes superposées si pas de place en largeur */
+}
+#col_info_generale{
+    background-color: rgb(255, 145, 0);
+    flex: 1;
+
     display: flex;                      /* Flexbox sur les div (photo, contact, a propos et loisirs) */
     flex-direction: column;             /* direction des div : de haut en bas */
     justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
     align-items: space-between;         /* alignement axe secondaire (horiz.): étiré sur tout l'axe */
 }
-#col_gauche{
-    max-width: 250px;
-    width: 400px;
-    background-color: rgb(255, 187, 0);
-    flex: 1;
-}
-#col_droite{
-    max-width: 750px;
-    padding: 12px;                          /* Marge intérieure de 12px */
-    background-color: aqua;
-    flex: 3;
-}
 #blocphoto {
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: space-between;
-    /*flex: 1;*/
+    /*background-color: green;*/
+    flex: 0 0 150px;
+    display: flex;                      /* centrage de #phtoIdentite */
 }
-#contact {
-
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: space-between;
-    /*flex: 1;*/
-}
-.couleurA {
-        background-color: blueviolet;
+#photoIdentite {
+    margin: auto;
 }
 #apropos {
-    background-color: salmon;
-     /*flex: 1;*/
+    flex: 1;                            /* prend la hauteur restante */
 }
 #loisirs {
-    background-color: yellow;
-    /*flex: 1;*/
+    margin-top: auto;
+
 }
 .bandeau {
     background-color: black;
-    color: ;
     text-align: center;
 }
+#col_info_detaillee{
+    padding: 12px;                          /* Marge intérieure de 12px */
+    background-color: aqua;
+    flex: 3;
 
+    display: flex;                      /* Flexbox sur les div (photo, contact, a propos et loisirs) */
+    flex-direction: column;             /* direction des div : de haut en bas */
+    justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
+}
 
 
 h1, h2{
-    font-weight: bold;
-    font-style: normal;
-    margin: 0px;    
+   /* font-weight: bold;
+    font-style: normal; */
+    margin: 0px;                           /* texte sans marge au dessus */
 }
 p, li {
-    font-size: xx-small;;
+    font-size: 0.8rem;
 }
-
+#contact ul {
+    list-style-type: none;
+    }
+#apropos p {
+    background-color: aqua;
+    margin: 0;
+    padding: 10%;
+}
 h1{
     text-align: center;
 }
@@ -95,5 +80,5 @@ img{
 }
 
 h2{
-    color: #6E4A46;
+    color: rgb(255, 145, 0);
 }
