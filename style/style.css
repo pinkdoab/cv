@@ -5,7 +5,6 @@
 body {
     background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
-    font-size: 100%;                                    /* taille par defaut du navigateur */
 
     min-height :100vh;                                     /* hauteur 100% du viewport */
     max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
@@ -13,32 +12,30 @@ body {
     margin: auto;                                       /* page centrée */
     
     display: flex;                                      /* Flexbox sur les colonnes */
-    flex-wrap: wrap;                                    /* colonnes superposées si pas de place en largeur */
+    /*flex-wrap: wrap;                                    /* colonnes superposées si pas de place en largeur */
 }
 #col_info_generale{
     background-color: rgb(255, 145, 0);
+
+    font-size: 0.8rem;
     flex: 1;
 
-    display: flex;                      /* Flexbox sur les div (photo, contact, a propos et loisirs) */
-    flex-direction: column;             /* direction des div : de haut en bas */
-    justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
-    align-items: space-between;         /* alignement axe secondaire (horiz.): étiré sur tout l'axe */
+    display: flex;
+    flex-direction: column;
 }
 #blocphoto {
-    display: flex;                      /* centrage de #photoIdentite */
-    justify-content: center;
-    align-items: center
+    display: flex;
+    padding: 1rem;
 }
-#taille_photo{
-    width: 40%;
-	margin: 1rem;
+#blocphoto img {
+    display: block;
+    margin: auto;   
 }
-
-#contact h5 {
-    margin: 0.5rem 0rem 0rem 2rem;
+#contact h4 {
+    margin: 0.5rem 2rem 0 2rem;
 }
 #contact p {
-    margin: 0rem 0rem 0.5rem 2rem;
+    margin: -0.1rem 2rem 0.5rem 2rem;
 }
 #apropos {
     flex: 1;                            /* prend la hauteur restante */
@@ -60,8 +57,9 @@ body {
     justify-content: space-around;
 }
 
-h2{
+#col_info_generale h2{
     color: rgb(255, 145, 0);
+    margin: 0px;                           /* texte sans marge au dessus */
 }
 .bandeau {
     background-color: black;
@@ -71,28 +69,43 @@ h2{
 
 
 
-#col_info_detaillee{
-    padding: 12px;                          /* Marge intérieure de 12px */
+#col_info_detaillee {
     background-color: aqua;
     flex: 3;
 
+    padding: 2rem;
     display: flex;                      /* Flexbox sur les div (photo, contact, a propos et loisirs) */
     flex-direction: column;             /* direction des div : de haut en bas */
     justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
 }
-
-h1, h2{
-   /* font-weight: bold;
-    font-style: normal; */
-    margin: 0px;                           /* texte sans marge au dessus */
+#nom {
+    margin: 2rem 0;
 }
-p, li {
-    font-size: 0.8rem;
+#nom h1 {
+    margin: 0;
+    font-size: 2rem;
 }
+#nom h2 {
+    margin: -0.5rem 0 0 0;
+    font-size: 1.6rem;    
+}
+#formation {
+    display: flex;
+    flex-direction: column;
+ 
+}
+#experience {
+    display: flex;
+    flex-direction: column;
+ 
+}
+#recommandation {
+    display: flex;
+    flex-direction: column;
 
-
-h1{
-    text-align: center;
+}
+#col_info_detaillee texte {
+    margin: auto;
 }
 
 
