@@ -49,7 +49,6 @@ body {
 }
 #logos img{
     width: 20%;
-	height: 20%;
 }
 #logos {
     margin: 1rem 2rem 1rem 2rem;
@@ -71,6 +70,7 @@ body {
 
 #col_info_detaillee {
     background-color: aqua;
+    font-size: 0.8rem;
     flex: 3;
 
     padding: 2rem;
@@ -79,22 +79,50 @@ body {
     justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
 }
 #nom {
-    margin: 2rem 0;
+    
 }
 #nom h1 {
     margin: 0;
     font-size: 2rem;
 }
-#nom h2 {
+#nom h3 {
     margin: -0.5rem 0 0 0;
-    font-size: 1.6rem;    
+    font-size: 1.2rem;  
 }
-#formation {
+.filet {
+    border-top: 1px solid rgb(255, 145, 0);
+}
+
+
+
+.article {
     display: flex;
     flex-direction: column;
- 
 }
-#experience {
+.article img {
+    display: inline-block;
+    width: 4%;
+    vertical-align: middle;
+}
+.article h2 {
+    margin-bottom: 0.2rem;
+}
+
+.sous-article {
+    display: flex;
+}
+.zonegauche {
+    flex: 1;
+}
+.zonedroite {
+    flex: 2;
+}
+
+
+
+
+
+#formation {
     display: flex;
     flex-direction: column;
  
