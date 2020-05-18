@@ -8,13 +8,14 @@ body {
     font-size: 0.8rem;
     min-height: 100vh;                                     /* hauteur 100% du viewport */
     max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
+    min-width: 65vh;
     margin: 0;
 
     margin: auto;                                       /* page centrée */
     display: flex;                                      /* Flexbox sur les colonnes */
 }
-/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
-@media screen and (max-width: 1024px)
+/* Nouvelles règles si la fenêtre fait au plus 800px de large */
+@media screen and (max-width: 800px)
 {
     body {
         background: #FFF;                                 /*couleur fond de la page */
@@ -26,8 +27,21 @@ body {
     
         margin: auto;                                       /* page centrée */
         display: flex;                                      /* Flexbox sur les colonnes */
-        flex-direction: column;
-    }    
+        flex-direction: column-reverse;
+    } 
+    .col_info_generale #loisirs {
+        display: none;
+    }
+    .col_info_generale #blocphoto {
+        display: none;
+    }
+}
+/* Nouvelles règles si la fenêtre fait au moins 801px de large */
+@media screen and (min-width: 801px)
+{
+    .col_info_detaillee #blocphoto {
+        display: none;
+    }
 }
 p, h1, h2, h3, h4 {
     margin: 0;
