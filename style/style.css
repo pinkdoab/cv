@@ -5,23 +5,50 @@
 body {
     background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
-
-    min-height :100vh;                                     /* hauteur 100% du viewport */
+    font-size: 0.8rem;
+    min-height: 100vh;                                     /* hauteur 100% du viewport */
     max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
+    margin: 0;
 
     margin: auto;                                       /* page centrée */
-    
     display: flex;                                      /* Flexbox sur les colonnes */
-    /*flex-wrap: wrap;                                    /* colonnes superposées si pas de place en largeur */
 }
-#col_info_generale{
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1024px)
+{
+    body {
+        background: #FFF;                                 /*couleur fond de la page */
+        font-family: 'OpenSans', 'Arial', sans-serif;
+        font-size: 0.8rem;
+        min-height: 100vh;                                     /* hauteur 100% du viewport */
+        max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
+        margin: 0;
+    
+        margin: auto;                                       /* page centrée */
+        display: flex;                                      /* Flexbox sur les colonnes */
+        flex-direction: column;
+    }    
+}
+p, h1, h2, h3, h4 {
+    margin: 0;
+}
+ul {
+    margin: 0 0 1rem 0;
+}
+.col_info_generale{
     background-color: rgb(255, 145, 0);
-
-    font-size: 0.8rem;
     flex: 1;
 
     display: flex;
     flex-direction: column;
+}
+.col_info_generale h2{
+    color: rgb(255, 145, 0);
+
+}
+.bandeau {
+    background-color: black;
+    text-align: center;
 }
 #blocphoto {
     display: flex;
@@ -29,7 +56,7 @@ body {
 }
 #blocphoto img {
     display: block;
-    margin: auto;   
+    margin: auto;
 }
 #contact h4 {
     margin: 0.5rem 2rem 0 2rem;
@@ -45,58 +72,39 @@ body {
     text-align: justify;
 }
 #loisirs {
-    margin-top: auto;
-}
-#logos img{
-
-    width: 20%;
+    margin-top: auto;                   /* pousse Loisirs en bas de la colonne */
 }
 #logos {
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1rem 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
-
-#col_info_generale h2{
-    color: rgb(255, 145, 0);
-    margin: 0;                           /* texte sans marge au dessus */
+#logos img{
+    width: 20%;
 }
-.bandeau {
-    background-color: black;
-    text-align: center;
-}
-
-
-
-
-#col_info_detaillee {
+/* --------------------------------------------------------------------------  */
+.col_info_detaillee {
     background-color: aqua;
-    font-size: 0.8rem;
     flex: 3;
+    padding: 2rem 2rem 1rem 2rem;
 
-    padding: 2rem;
-    display: flex;                      /* Flexbox sur les div (photo, contact, a propos et loisirs) */
-    flex-direction: column;             /* direction des div : de haut en bas */
-    justify-content: flex-start;        /* alignement axe principal (verti.): alignés au début */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-#nom {
-    
+.nom h1 {
+    font-size: 2.3rem;
 }
-#nom h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-#nom h3 {
-    margin: -0.5rem 0 0 0;
+.nom h3 {
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
     font-size: 1.2rem;  
 }
 .filet {
     border-top: 1px solid rgb(255, 145, 0);
+    margin-bottom: 1rem;
 }
-
-
-
 .article {
     display: flex;
     flex-direction: column;
@@ -107,35 +115,28 @@ body {
     vertical-align: middle;
 }
 .article h2 {
+    margin: 0;
     margin-bottom: 0.2rem;
 }
-
 .sous-article {
+    margin-bottom: 1rem;
     display: flex;
 }
 .zonegauche {
     flex: 1;
 }
 .zonedroite {
-    flex: 2;
+    flex: 3;
 }
-
-
-
-
-
-#formation {
-    display: flex;
-    flex-direction: column;
- 
+.emploi {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
 }
-#recommandation {
-    display: flex;
-    flex-direction: column;
-
+.entreprise {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
 }
-#col_info_detaillee texte {
-    margin: auto;
+.description {
+    text-align: justify;    
 }
-
-
