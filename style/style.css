@@ -6,48 +6,12 @@ body {
     background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
     font-size: 0.8rem;
-    min-height: 100vh;                                     /* hauteur 100% du viewport */
-    max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
+    min-height: 100vh;                                  /* hauteur 100% du viewport */
+    max-width: 100vh;                                   /* largeur max. 100% de la hauteur */
     min-width: 65vh;
-    margin: 0;
 
     margin: auto;                                       /* page centrée */
-    display: flex;                                      /* Flexbox sur les colonnes */
-}
-/* Nouvelles règles si la fenêtre fait au plus 800px de large */
-@media screen and (max-width: 800px)
-{
-    body {
-        background: #FFF;                                 /*couleur fond de la page */
-        font-family: 'OpenSans', 'Arial', sans-serif;
-        font-size: 0.8rem;
-        min-height: 100vh;                                     /* hauteur 100% du viewport */
-        max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
-        margin: 0;
-    
-        margin: auto;                                       /* page centrée */
-        display: flex;                                      /* Flexbox sur les colonnes */
-        flex-direction: column-reverse;
-    } 
-    .col_info_generale #loisirs {
-        display: none;
-    }
-    .col_info_generale #blocphoto {
-        display: none;
-    }
-}
-/* Nouvelles règles si la fenêtre fait au moins 801px de large */
-@media screen and (min-width: 801px)
-{
-    .col_info_detaillee #blocphoto {
-        display: none;
-    }
-}
-p, h1, h2, h3, h4 {
-    margin: 0;
-}
-ul {
-    margin: 0 0 1rem 0;
+    display: flex;                                      /* Flexbox sur les deux sections */
 }
 .col_info_generale{
     background-color: rgb(255, 145, 0);
@@ -58,7 +22,6 @@ ul {
 }
 .col_info_generale h2{
     color: rgb(255, 145, 0);
-
 }
 .bandeau {
     background-color: black;
@@ -101,6 +64,7 @@ ul {
 .col_info_detaillee {
     background-color: aqua;
     flex: 3;
+    margin: 0;
     padding: 2rem 2rem 1rem 2rem;
 
     display: flex;
@@ -153,4 +117,36 @@ ul {
 }
 .description {
     text-align: justify;    
+}
+
+
+
+/* Nouvelles règles si la fenêtre fait au plus 800px de large */
+@media screen and (max-width: 800px)
+{
+    body {
+        background: #FFF;                                 /*couleur fond de la page */
+        font-family: 'OpenSans', 'Arial', sans-serif;
+        font-size: 0.8rem;
+        min-height: 100vh;                                     /* hauteur 100% du viewport */
+        max-width: 100vh;                                  /* largeur max. 100% de la hauteur */
+        margin: 0;
+    
+        margin: auto;                                       /* page centrée */
+        display: flex;                                      /* Flexbox sur les colonnes */
+        flex-direction: column-reverse;
+    } 
+    .col_info_generale #loisirs {
+        display: none;
+    }
+    .col_info_generale #blocphoto {
+        display: none;
+    }
+}
+/* Nouvelles règles si la fenêtre fait au moins 801px de large */
+@media screen and (min-width: 801px)
+{
+    .col_info_detaillee #blocphoto {
+        display: none;
+    }
 }
