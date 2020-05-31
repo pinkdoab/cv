@@ -8,32 +8,115 @@ body {
     font-size: 0.8rem;
     min-height: 100vh;                                  /* hauteur 100% du viewport */
     max-width: 100vh;                                   /* largeur max. 100% de la hauteur */
-    min-width: 65vh;
-
+    /*min-width: 65vh;*/
     margin: auto;                                       /* page centrée */
+
     display: flex;                                      /* Flexbox sur les deux sections */
+    flex-direction: row-reverse;
 }
-.col_info_generale{
+section {
+    background-color: aqua;
+    flex: 3;
+    padding: 2rem 2rem 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+aside {
     background-color: rgb(255, 145, 0);
     flex: 1;
 
     display: flex;
     flex-direction: column;
 }
-.col_info_generale h2{
+
+
+header h1 {
+    /*font-size: 1.3rem;*/
+}
+header h3 {
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    /*font-size: 1.3rem;*/
+}
+#photoHeader {
+    display: none;
+    width: 14%;
+    vertical-align: middle;
+}
+.filet {
+    border-top: 1px solid rgb(255, 145, 0);
+    margin-bottom: 1rem;
+}
+
+
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+article h2 {
+    position: relative;
+    left: 0.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.3rem;
+}
+article img {
+    position: relative;
+    right: 0.5rem;
+    /*font-size: 1.3rem;*/
+    vertical-align: middle;
+    width: 4%;
+}
+
+
+
+
+
+.poste {
+    margin-bottom: 1rem;
+    display: flex;
+}
+.dateVille{
+    flex: 1;
+}
+.fonction {
+    flex: 3;
+}
+.emploi {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+.entreprise {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+.description {
+    text-align: justify;    
+}
+
+
+
+aside h2{
     color: rgb(255, 145, 0);
 }
 .bandeau {
     background-color: black;
     text-align: center;
 }
-#blocphoto {
+#photoAside {
     display: flex;
     padding: 1rem;
+    align-items: flex-start;            /* bug probleme hauteur avec safari */
+
 }
-#blocphoto img {
+#photoAside img {
     display: block;
     margin: auto;
+    width: 80%;
+    border-radius: 50%;
 }
 #contact h4 {
     margin: 0.5rem 2rem 0 2rem;
@@ -61,63 +144,7 @@ body {
     width: 20%;
 }
 /* --------------------------------------------------------------------------  */
-.col_info_detaillee {
-    background-color: aqua;
-    flex: 3;
-    margin: 0;
-    padding: 2rem 2rem 1rem 2rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.nom h1 {
-    font-size: 2.3rem;
-}
-.nom h3 {
-    margin-top: -0.5rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;  
-}
-.filet {
-    border-top: 1px solid rgb(255, 145, 0);
-    margin-bottom: 1rem;
-}
-.article {
-    display: flex;
-    flex-direction: column;
-}
-.article img {
-    display: inline-block;
-    width: 4%;
-    vertical-align: middle;
-}
-.article h2 {
-    margin: 0;
-    margin-bottom: 0.2rem;
-}
-.sous-article {
-    margin-bottom: 1rem;
-    display: flex;
-}
-.zonegauche {
-    flex: 1;
-}
-.zonedroite {
-    flex: 3;
-}
-.emploi {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-}
-.entreprise {
-    font-size: 0.9rem;
-    margin-bottom: 0.3rem;
-}
-.description {
-    text-align: justify;    
-}
 
 
 
