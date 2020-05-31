@@ -14,55 +14,46 @@ body {
     display: flex;                                      /* Flexbox sur les deux sections */
     flex-direction: row-reverse;
 }
-section {
+article {
     background-color: aqua;
-    flex: 3;
-    padding: 2rem 2rem 1rem 2rem;
+    flex: 1;
+    padding: 1rem 2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-aside {
-    background-color: rgb(255, 145, 0);
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
+article header h1 {
+    font-size: 3rem;
 }
+article header h2 {
+    font-size: 1.5rem;
+    margin-top: -3.5rem;
 
-
-header h1 {
-    /*font-size: 1.3rem;*/
 }
-header h3 {
-    margin-top: -0.5rem;
-    margin-bottom: 1.5rem;
-    /*font-size: 1.3rem;*/
-}
-#photoHeader {
+article header #photo {
     display: none;
     width: 14%;
     vertical-align: middle;
 }
-.filet {
+article section .filet {
     border-top: 1px solid rgb(255, 145, 0);
     margin-bottom: 1rem;
 }
 
 
 
-article {
+article section {
     display: flex;
     flex-direction: column;
 }
-article h2 {
+article section h3 {
     position: relative;
     left: 0.5rem;
     margin-bottom: 0.2rem;
     font-size: 1.3rem;
 }
-article img {
+article section img {
     position: relative;
     right: 0.5rem;
     /*font-size: 1.3rem;*/
@@ -71,7 +62,13 @@ article img {
 }
 
 
+aside {
+    background-color: rgb(255, 145, 0);
+    width: 15rem;
 
+    display: flex;
+    flex-direction: column;
+}
 
 
 .poste {
@@ -102,7 +99,8 @@ article img {
 aside h2{
     color: rgb(255, 145, 0);
 }
-.bandeau {
+aside section .bandeau {
+    margin: 0;
     background-color: black;
     text-align: center;
 }
