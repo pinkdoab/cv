@@ -11,10 +11,12 @@ body {
     /*min-width: 65vh;*/
     margin: auto;                                       /* page centrée */
 
-    display: flex;                                      /* Flexbox sur les deux sections */
-    flex-direction: row-reverse;
 }
-article {
+.conteneur-cv {
+    display: flex;                                      /* Flexbox sur les deux sections */
+    flex-direction: row-reverse;    
+}
+.colonne-droite {
     background-color: aqua;
     flex: 1;
     padding: 1rem 2rem;
@@ -23,54 +25,43 @@ article {
     flex-direction: column;
     justify-content: flex-start;
 }
-article header h1 {
+.colonne-droite header h1 {
     font-size: 3rem;
 }
-article header h2 {
+.colonne-droite header h2 {
     font-size: 1.5rem;
     margin-top: -3.5rem;
 
 }
-article header #photo {
+.colonne-droite header #photo {
     display: none;
     width: 14%;
     vertical-align: middle;
 }
-article section .filet {
+.colonne-droite section .filet {
     border-top: 1px solid rgb(255, 145, 0);
     margin-bottom: 1rem;
 }
 
 
 
-article section {
+.colonne-droite section {
     display: flex;
     flex-direction: column;
 }
-article section h3 {
+.colonne-droite section h3 {
     position: relative;
     left: 0.5rem;
     margin-bottom: 0.2rem;
     font-size: 1.3rem;
 }
-article section img {
+.colonne-droite section img {
     position: relative;
     right: 0.5rem;
     /*font-size: 1.3rem;*/
     vertical-align: middle;
     width: 4%;
 }
-
-
-aside {
-    background-color: rgb(255, 145, 0);
-    width: 15rem;
-
-    display: flex;
-    flex-direction: column;
-}
-
-
 .poste {
     margin-bottom: 1rem;
     display: flex;
@@ -96,10 +87,19 @@ aside {
 
 
 
-aside h2{
+
+.colonne-gauche {
+    background-color: rgb(255, 145, 0);
+    width: 15rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.colonne-gauche h2{
     color: rgb(255, 145, 0);
 }
-aside section .bandeau {
+.colonne-gauche section .bandeau {
     margin: 0;
     background-color: black;
     text-align: center;
@@ -129,7 +129,7 @@ aside section .bandeau {
     margin: 2rem;
     text-align: justify;
 }
-#loisirs {
+aside #loisirs {
     margin-top: auto;                   /* pousse Loisirs en bas de la colonne */
 }
 #logos {
