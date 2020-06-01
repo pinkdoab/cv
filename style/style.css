@@ -5,14 +5,11 @@
 body {
     background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
-    font-size: 0.8rem;
     min-height: 100vh;                                  /* hauteur 100% du viewport */
-    max-width: 100vh;                                   /* largeur max. 100% de la hauteur */
-    /*min-width: 65vh;*/
+    max-width: 100vh;                                   /* largeur max. 100% de la hauteur du viewport*/
     margin: auto;                                       /* page centrée */
-
 }
-.conteneur-cv {
+article {
     display: flex;                                      /* Flexbox sur les deux sections */
     flex-direction: row-reverse;    
 }
@@ -25,31 +22,27 @@ body {
     flex-direction: column;
     justify-content: flex-start;
 }
+
+
+
 .colonne-droite header h1 {
     font-size: 3rem;
 }
 .colonne-droite header h2 {
     font-size: 1.5rem;
     margin-top: -3.5rem;
-
 }
 .colonne-droite header #photo {
     display: none;
-    width: 14%;
-    vertical-align: middle;
 }
+
+
+
 .colonne-droite section .filet {
     border-top: 1px solid rgb(255, 145, 0);
     margin-bottom: 1rem;
 }
-
-
-
-.colonne-droite section {
-    display: flex;
-    flex-direction: column;
-}
-.colonne-droite section h3 {
+.colonne-droite section h1 {
     position: relative;
     left: 0.5rem;
     margin-bottom: 0.2rem;
@@ -62,9 +55,14 @@ body {
     vertical-align: middle;
     width: 4%;
 }
+
+
+
+
 .poste {
     margin-bottom: 1rem;
     display: flex;
+    flex-direction: row-reverse;
 }
 .dateVille{
     flex: 1;
@@ -72,7 +70,7 @@ body {
 .fonction {
     flex: 3;
 }
-.emploi {
+/*.emploi {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 0.3rem;
@@ -83,7 +81,7 @@ body {
 }
 .description {
     text-align: justify;    
-}
+}*/
 
 
 
