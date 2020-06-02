@@ -15,6 +15,9 @@ body {
 .coul_orange {
     color: var(--couleur-principale);
 }
+.souligne {
+    border-bottom:1px solid var(--couleur-principale);
+}
 article {
     display: flex;                                      /* Flexbox sur les deux sections */
     flex-direction: row-reverse;    
@@ -44,15 +47,14 @@ article {
     margin-bottom: 1rem;
 }
 .colonne-droite section h1 {
-    position: relative;
-    left: 0.5rem;
     margin-bottom: 0.2rem;
     font-size: 1.3rem;
 }
-.colonne-droite section img {
+.colonne-droite section h1 span {
     position: relative;
-    right: 0.5rem;
-    /*font-size: 1.3rem;*/
+    left: .5rem;
+}
+.colonne-droite section img {
     vertical-align: middle;
     width: 4%;
 }
