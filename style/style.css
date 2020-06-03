@@ -2,10 +2,8 @@
     font-family: 'OpenSans';
     src: url('../font/OpenSans-Regular.ttf') format('truetype');
 }
-:root {
-    --couleur-principale: #f57d00;
-}
 body {
+    --couleur-principale: #f57d00;
     background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
     min-height: 100vh;                                  /* hauteur 100% du viewport */
