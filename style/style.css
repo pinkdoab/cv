@@ -3,7 +3,7 @@
     src: url('../font/OpenSans-Regular.ttf') format('truetype');
 }
 :root {
-    --couleur-principale: rgb(255, 145, 0);
+    --couleur-principale: #f57d00;
 }
 body {
     background: #FFF;                                 /*couleur fond de la page */
