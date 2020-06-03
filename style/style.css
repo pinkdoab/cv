@@ -6,7 +6,7 @@ body {
     background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
     min-height: 100vh;                                  /* hauteur 100% du viewport */
-    max-width: 100vh;                                   /* largeur max. 100% de la hauteur du viewport*/
+    max-width: 120vh;                                   /* largeur max. 100% de la hauteur du viewport*/
     margin: auto;                                       /* page centrée */
 }
 .coul_orange {
@@ -45,7 +45,7 @@ article {
 }
 .colonne-droite section h2 {
     margin-bottom: 0.2rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 .colonne-droite section h2 span {
     position: relative;
@@ -64,24 +64,30 @@ article {
     display: flex;
     flex-direction: row-reverse;
 }
-.dateVille{
+.date-ville{
     flex: 1;
+}   
+.date-ville  p {
+    margin: 0 0;
 }
 .fonction {
     flex: 3;
 }
-/*.emploi {
+.fonction h3 {
+    margin-top: 0;
+    margin-bottom: .7rem;
+    font-size: 1.3rem;
+}
+.fonction h4 {
+    margin-top: 0;
+    margin-bottom: .5rem;
     font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 0.3rem;
 }
-.entreprise {
-    font-size: 0.9rem;
-    margin-bottom: 0.3rem;
+.fonction p {
+    margin-top: 0;
+    text-align: justify; 
 }
-.description {
-    text-align: justify;    
-}*/
+
 
 
 
