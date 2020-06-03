@@ -2,9 +2,6 @@
     font-family: 'OpenSans';
     src: url('../font/OpenSans-Regular.ttf') format('truetype');
 }
-:root {
---couleur-principale:red;
-}
 body {
     background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
@@ -13,10 +10,10 @@ body {
     margin: auto;                                       /* page centrée */
 }
 .coul_orange {
-    color: var(--couleur-principale);
+    color: #f57d00;
 }
 .souligne {
-    border-bottom:1px solid var(--couleur-principale);
+    border-bottom:1px solid #f57d00;
 }
 article {
     display: flex;                                      /* Flexbox sur les deux sections */
@@ -90,7 +87,7 @@ article {
 
 
 .colonne-gauche {
-    background-color: var(--couleur-principale);
+    background-color: #f57d00;
     width: 15rem;
 
     display: flex;
