@@ -8,6 +8,7 @@ body {
     min-height: 100vh;                                  /* hauteur 100% du viewport */
     max-width: 120vh;                                   /* largeur max. 100% de la hauteur du viewport*/
     margin: auto;                                       /* page centrée */
+    background-color: rgb(218, 218, 218);
 }
 .coul_orange {
     color: #f57d00;
@@ -16,11 +17,13 @@ body {
     border-bottom:1px solid #f57d00;
 }
 article {
+    border: .1rem solid black;
+    margin: 2rem;
     display: flex;                                      /* Flexbox sur les deux sections */
     flex-direction: row-reverse;    
 }
 .colonne-droite {
-    background-color: aqua;
+    background-color: white;
     flex: 1;
     padding: 1rem 2rem;
 
@@ -28,63 +31,58 @@ article {
     flex-direction: column;
     justify-content: flex-start;
 }
-.colonne-droite header h1 {
+.colonne-droite h1 {
     font-size: 3rem;
 }
-.colonne-droite header h2 {
+.colonne-droite h2 {
     font-size: 1.5rem;
     margin-top: -3.5rem;
 }
-.colonne-droite header #photo {
+.colonne-droite #photo {
     display: none;
 }
 
-.colonne-droite section .filet {
+
+.colonne-droite .filet {
     border-top: 1px solid;
     margin-bottom: 1rem;
 }
-.colonne-droite section h2 {
+.colonne-droite h3 {
     margin-bottom: 0.2rem;
     font-size: 1.4rem;
 }
-.colonne-droite section h2 span {
+.colonne-droite h3 span {
     position: relative;
-    left: .5rem;
+    margin-left: .5rem;
 }
-.colonne-droite section img {
+.colonne-droite img {
     vertical-align: middle;
     width: 4%;
 }
-
-
-
-
-.poste {
+.colonne-droite .poste {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row-reverse;
 }
-.date-ville{
+.colonne-droite .poste .date-ville {
     flex: 1;
-}   
-.date-ville  p {
-    margin: 0 0;
-}
-.fonction {
+}  
+.colonne-droite .poste .fonction {
     flex: 3;
 }
-.fonction h3 {
+.colonne-droite h4, h5, p {
     margin-top: 0;
+}
+.colonne-droite h4 {
     margin-bottom: .7rem;
     font-size: 1.3rem;
 }
-.fonction h4 {
-    margin-top: 0;
+.colonne-droite h5 {
     margin-bottom: .5rem;
     font-size: 1.1rem;
 }
-.fonction p {
-    margin-top: 0;
+.colonne-droite p {
+    margin: 0 0;
     text-align: justify; 
 }
 
