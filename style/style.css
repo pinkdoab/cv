@@ -46,11 +46,11 @@ article {
     border-top: 1px solid;
     margin-bottom: 1rem;
 }
-.colonne-droite section h1 {
+.colonne-droite section h2 {
     margin-bottom: 0.2rem;
     font-size: 1.3rem;
 }
-.colonne-droite section h1 span {
+.colonne-droite section h2 span {
     position: relative;
     left: .5rem;
 }
