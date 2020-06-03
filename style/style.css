@@ -103,7 +103,7 @@ article {
 }
 #photoAside {
     display: flex;
-    padding: 1rem;
+    /*padding: 1rem;*/
     align-items: flex-start;            /* bug probleme hauteur avec safari */
 
 }
