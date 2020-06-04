@@ -97,49 +97,49 @@ article {
     display: flex;
     flex-direction: column;
 }
-.colonne-gauche section .bandeau {
+.colonne-gauche .bandeau {
     margin: 0;
     background-color: black;
     text-align: center;
 }
-#photoAside {
+.colonne-gauche #photoAside {
     display: flex;
     /*padding: 1rem;*/
     align-items: flex-start;            /* bug probleme hauteur avec safari */
 
 }
-#photoAside img {
+.colonne-gauche #photoAside img {
     display: block;
     margin: auto;
     width: 80%;
     border-radius: 50%;
 }
-#contact h4 {
+.colonne-gauche #contact h4 {
     margin: 0.5rem 2rem 0 2rem;
 }
-#contact p {
+.colonne-gauche #contact p {
     margin: -0.1rem 2rem 0.5rem 2rem;
 }
-#apropos {
+.colonne-gauche #apropos {
     flex: 1;                            /* prend la hauteur restante */
 }
-#apropos p {
+.colonne-gauche #apropos p {
     margin: 2rem;
     text-align: justify;
 }
-aside #loisirs {
+.colonne-gauche aside #loisirs {
     margin-top: auto;                   /* pousse Loisirs en bas de la colonne */
 }
-#logos {
+.colonne-gauche #logos {
     margin: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#logos img{
+.colonne-gauche #logos img{
     width: 20%;
 }
-/* --------------------------------------------------------------------------  */
+
 
 
 
