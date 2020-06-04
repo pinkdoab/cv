@@ -139,9 +139,39 @@ article {
     width: 20%;
 }
 
-/* iPhone XS Max, 11 Pro Max */
-/*@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {*/
 @media only screen and (max-width: 896px)  {
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+    .colonne-droite {
+        background-color: white;
+        padding: 1rem 2rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .colonne-gauche {
+        background-color: #5F80ED;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .colonne-gauche #photoAside img {
+        display: block;
+        margin: auto;
+        width: 20%;
+        border-radius: 50%;
+    }
+    .colonne-gauche #logos img{
+        width: 10%;
+    }
+}
+
+/* iPhone XS Max, 11 Pro Max */
+@media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
     article {
         display: flex;
         flex-direction: column;
