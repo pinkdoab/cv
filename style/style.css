@@ -11,10 +11,10 @@ body {
     background-color: rgb(218, 218, 218);
 }
 .coul_orange {
-    color: #f57d00;
+    color: #5F80ED;
 }
 .souligne {
-    border-bottom:1px solid #f57d00;
+    border-bottom:1px solid #5F80ED;
 }
 article {
     border: .1rem solid black;
@@ -91,7 +91,8 @@ article {
 
 
 .colonne-gauche {
-    background-color: #f57d00;
+    /*background-color: #f57d00;*/
+    background-color: #5F80ED;
     width: 15rem;
 
     display: flex;
@@ -99,6 +100,7 @@ article {
 }
 .colonne-gauche .bandeau {
     margin: 0;
+    color: white;
     background-color: black;
     text-align: center;
 }
