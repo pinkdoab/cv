@@ -172,6 +172,13 @@ article {
 
 /* iPhone XS Max, 11 Pro Max en portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    body {
+        background: #FFF;                                 /*couleur fond de la page */
+        font-family: 'OpenSans', 'Arial', sans-serif;
+        width: 100vh;
+        margin: auto;                                       /* page centrée */
+        background-color: rgb(218, 218, 218);
+    }
     article {
         display: flex;
         flex-direction: column;
@@ -204,6 +211,13 @@ article {
 
 /* iPhone XS Max, 11 Pro Max en paysage */
 @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    body {
+        background: #FFF;                                 /*couleur fond de la page */
+        font-family: 'OpenSans', 'Arial', sans-serif;
+        width: 100vh;
+        margin: auto;                                       /* page centrée */
+        background-color: rgb(218, 218, 218);
+    }
     article {
         display: flex;
         flex-direction: column;
