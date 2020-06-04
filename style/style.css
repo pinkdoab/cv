@@ -7,7 +7,7 @@ body {
     font-family: 'OpenSans', 'Arial', sans-serif;
     min-height: 100vh;                                  /* hauteur 100% du viewport */
     max-width: 120vh;                                   /* largeur max. 100% de la hauteur du viewport*/
-    min-width: 80vh;
+    /*min-width: 80vh;*/
     margin: auto;                                       /* page centrée */
     background-color: rgb(218, 218, 218);
 }
@@ -175,7 +175,7 @@ article {
     body {
         background: #FFF;                                 /*couleur fond de la page */
         font-family: 'OpenSans', 'Arial', sans-serif;
-        width: 100vh;
+        width: 100vw;
         margin: auto;                                       /* page centrée */
         background-color: rgb(218, 218, 218);
     }
@@ -214,7 +214,7 @@ article {
     body {
         background: #FFF;                                 /*couleur fond de la page */
         font-family: 'OpenSans', 'Arial', sans-serif;
-        width: 100vh;
+        width: 100vw;
         margin: auto;                                       /* page centrée */
         background-color: rgb(218, 218, 218);
     }
