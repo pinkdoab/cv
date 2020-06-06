@@ -139,7 +139,7 @@ article {
     width: 20%;
 }
 
-@media only screen and (max-width: 896px)  {
+/*@media only screen and (max-width: 896px)  {
     article {
         display: flex;
         flex-direction: column;
@@ -170,13 +170,13 @@ article {
     }
 }
 /* petit écran */
-@media screen and (max-width: 896px) {
+/*@media screen and (max-width: 896px) {
     body {
-        background: #FFF;                                 /*couleur fond de la page */
+        background: #FFF;                                
         font-family: 'OpenSans', 'Arial', sans-serif;
 
         width: 400px;
-        margin: auto;                                       /* page centrée */
+        margin: auto;                                       
         background-color: rgb(218, 218, 218);
     }
     article {
@@ -209,9 +209,9 @@ article {
     .colonne-gauche #logos img{
         width: 10%;
     }
-}
+}*/
 /* iPhone XS Max, 11 Pro Max en portrait */
-@media screen and (min-width: 414px) and (max-width: 896px) and (max-resolution: 3dppx) and (orientation: portrait) {
+@media only screen and (min-width: 414px) and (orientation: portrait) {
     body {
         background: #FFF;                                 /*couleur fond de la page */
         font-family: 'OpenSans', 'Arial', sans-serif;
@@ -253,7 +253,7 @@ article {
 }
 
 /* iPhone XS Max, 11 Pro Max en paysage */
-@media screen and (min-width: 414px) and (max-width: 896px) and (max-resolution: 3dppx) and (orientation: landscape) {
+@media only screen and (min-width: 896px) and (orientation: landscape) {
     body {
         background: #FFF;                                 /*couleur fond de la page */
         font-family: 'OpenSans', 'Arial', sans-serif;
