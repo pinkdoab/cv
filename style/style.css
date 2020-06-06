@@ -188,8 +188,8 @@ article {
         background: #FFF;                                 /*couleur fond de la page */
         font-family: 'OpenSans', 'Arial', sans-serif;
         min-height: 100vh;                                  /* hauteur 100% du viewport */
-        min-width: 100vw;
-        max-width: 120vw;
+        min-width: 140vw;
+        max-width: 200vw;
         margin: auto;                                       /* page centrée */
         background-color: rgb(218, 218, 218);
     }
