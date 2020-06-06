@@ -139,77 +139,7 @@ article {
     width: 20%;
 }
 
-/*@media only screen and (min-width: 1000px)  {
-    article {
-        display: flex;
-        flex-direction: column;
-    }
-    .colonne-droite {
-        background-color: white;
-        padding: 1rem 2rem;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .colonne-gauche {
-        background-color: #5F80ED;
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-    }
-    .colonne-gauche #photoAside img {
-        display: block;
-        margin: auto;
-        width: 20%;
-        border-radius: 50%;
-    }
-    .colonne-gauche #logos img{
-        width: 10%;
-    }
-}*/
-/* petit écran */
-/*@media screen and (max-width: 896px) {
-    body {
-        background: #FFF;                                
-        font-family: 'OpenSans', 'Arial', sans-serif;
-
-        width: 400px;
-        margin: auto;                                       
-        background-color: rgb(218, 218, 218);
-    }
-    article {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        border: 0.2rem solid #5F80ED;
-    }
-    .colonne-droite {
-        background-color: white;
-        padding: 1rem 2rem;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .colonne-gauche {
-        background-color: #5F80ED;
-
-
-        display: flex;
-        flex-direction: column;
-    }
-    .colonne-gauche #photoAside img {
-        display: block;
-        margin: auto;
-        width: 20%;
-        border-radius: 50%;
-    }
-    .colonne-gauche #logos img{
-        width: 10%;
-    }
-}*/
 /* iPhone XS Max, 11 Pro Max en portrait */
 @media only screen and (min-width: 414px) and (orientation: portrait) {
     body {
@@ -253,7 +183,7 @@ article {
 }
 
 /* iPhone XS Max, 11 Pro Max en paysage */
-@media only screen and (min-width: 896px) and (max-width: 1000px) and (orientation: landscape) {
+@media only screen and (min-width: 896px) and (max-width: 950px) and (orientation: landscape) {
     body {
         background: #FFF;                                 /*couleur fond de la page */
         font-family: 'OpenSans', 'Arial', sans-serif;
@@ -266,6 +196,7 @@ article {
     article {
         display: flex;
         flex-direction: column;
+        border: 0.2rem solid #5F80ED;
     }
     .colonne-droite {
         background-color: white;
