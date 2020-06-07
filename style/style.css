@@ -6,8 +6,8 @@ body {
     background: #FFF;                                 /*couleur fond de la page */
     font-family: 'OpenSans', 'Arial', sans-serif;
     min-height: 100vh;                                  /* hauteur 100% du viewport */
-    /*max-width: 200vh;                                   /* largeur max. 100% de la hauteur du viewport*/
-    min-width: 60vh;
+    max-width: 150vh;                                   /* largeur max. 100% de la hauteur du viewport*/
+    min-width: 50vh;
     margin: auto;                                       /* page centrée */
     background-color: rgb(218, 218, 218);
 }
