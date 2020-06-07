@@ -78,8 +78,9 @@ article {
     font-size: 1.1rem;
 }
 .colonne-droite p {
+    /*font-size: 1rem;*/ 
     margin-top: .3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     text-align: justify; 
 }
 
@@ -137,38 +138,14 @@ article {
 }
 
 /* petit écran et iPhone XS Max, 11 Pro Max en portrait */
-@media only screen and (min-width: 896px) and (max-width: 1000px) {
+@media only screen and (max-width: 990px) and (orientation: portrait){
     article {
         display: flex;
         flex-direction: column;
         border: 0.2rem solid #5F80ED;
     }
     .colonne-droite p {
-        font-size: 1rem; 
-    }
-    .colonne-gauche {
-        display: flex;
-        flex-direction: column;
-    }
-    .colonne-gauche #photoAside img {
-        display: block;
-        margin: auto;
-        width: 20%;
-        border-radius: 50%;
-    }
-    .colonne-gauche #logos img{
-        width: 10%;
-    }
-}
-/* petit écran et iPhone XS Max, 11 Pro Max en portrait */
-@media only screen and (min-width: 414px) and (max-width: 897px) {
-    article {
-        display: flex;
-        flex-direction: column;
-        border: 0.2rem solid #5F80ED;
-    }
-    .colonne-droite p {
-        font-size: 1rem; 
+        /*font-size: .8rem;*/
     }
     .colonne-gauche {
         display: flex;
