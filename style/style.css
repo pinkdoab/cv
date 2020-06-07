@@ -136,36 +136,17 @@ article {
     width: 20%;
 }
 
-
 /* petit écran et iPhone XS Max, 11 Pro Max en portrait */
-@media only screen and (max-width: 1000px) and (orientation: portrait) {
-/*@media only screen and (min-width: 414px) and (max-width: 1000px) and (orientation: portrait) {*/
-    body {
-
-        /*min-height: 100vh;                                 /* hauteur 100% du viewport */
-        /*min-width: 70vh;
-        margin: auto;                                       /* page centrée */
-        /*background-color: rgb(218, 218, 218);*/
-    }
+@media only screen and (min-width: 896px) and (max-width: 1000px) {
     article {
         display: flex;
         flex-direction: column;
         border: 0.2rem solid #5F80ED;
     }
-    .colonne-droite {
-        /*background-color: white;
-        padding: 1rem 2rem;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;*/
-    }
     .colonne-droite p {
         font-size: 1rem; 
     }
     .colonne-gauche {
-        /*background-color: #5F80ED;*/
-
         display: flex;
         flex-direction: column;
     }
@@ -180,44 +161,27 @@ article {
     }
 }
 /* petit écran et iPhone XS Max, 11 Pro Max en portrait */
-@media only screen and (max-width: 1000px) and (orientation: landscape) {
-    /*@media only screen and (min-width: 414px) and (max-width: 1000px) and (orientation: portrait) {*/
-        body {
-    
-            /*min-height: 100vh;                                 /* hauteur 100% du viewport */
-            /*min-width: 70vh;
-            margin: auto;                                       /* page centrée */
-            /*background-color: rgb(218, 218, 218);*/
-        }
-        article {
-            display: flex;
-            flex-direction: column;
-            border: 0.2rem solid #5F80ED;
-        }
-        .colonne-droite {
-            /*background-color: white;
-            padding: 1rem 2rem;
-    
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;*/
-        }
-        .colonne-droite p {
-            font-size: .7rem; 
-        }
-        .colonne-gauche {
-            /*background-color: #5F80ED;*/
-    
-            display: flex;
-            flex-direction: column;
-        }
-        .colonne-gauche #photoAside img {
-            display: block;
-            margin: auto;
-            width: 20%;
-            border-radius: 50%;
-        }
-        .colonne-gauche #logos img{
-            width: 10%;
-        }
+@media only screen and (min-width: 414px) and (max-width: 897px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        border: 0.2rem solid #5F80ED;
     }
+    .colonne-droite p {
+        font-size: 1rem; 
+    }
+    .colonne-gauche {
+        display: flex;
+        flex-direction: column;
+    }
+    .colonne-gauche #photoAside img {
+        display: block;
+        margin: auto;
+        width: 20%;
+        border-radius: 50%;
+    }
+    .colonne-gauche #logos img{
+        width: 10%;
+    }
+}
+
