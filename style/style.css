@@ -56,10 +56,15 @@ article {
     width: 4%;
 }
 .colonne-droite .poste {
-    margin-bottom: 2rem;
+    margin-bottom: 1.6rem;
+    padding: .3rem;
     display: flex;
     flex-direction: row-reverse;
 }
+.colonne-droite section .poste:hover {
+    background-color: rgb(246, 246, 252);
+}
+
 .colonne-droite .poste .date-ville {
     flex: 1;
 }  
