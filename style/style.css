@@ -114,6 +114,7 @@ article {
     margin: auto;
     width: 80%;
     border-radius: 50%;
+    border: 0.05rem solid rgb(63, 74, 170);
 }
 .colonne-gauche #contact h4 {
     margin: 0.5rem 2rem 0 2rem;
