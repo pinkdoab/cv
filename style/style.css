@@ -87,6 +87,22 @@ article {
     text-align: justify; 
 }
 
+
+
+.colonne-droite .date-ville p img{
+    width: 6%;
+}
+.colonne-droite .date-ville p span{
+    position: relative;
+    margin-left: .5rem;    
+}
+.colonne-droite .date-ville .aligne{
+    position: relative;
+    margin-left: 1.4rem;    
+}
+
+
+
 .colonne-gauche {
     background-color: #5F80ED;
     flex: 1;
@@ -141,6 +157,7 @@ article {
 .colonne-gauche #logos img{
     width: 20%;
 }
+
 
 /* petit écran et iPhone XS Max */
 @media only screen and (max-width: 1100px){
