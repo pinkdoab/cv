@@ -1,2 +1,2 @@
 # pinkdoab.github.io
-site internet
+site internet CV
